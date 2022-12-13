@@ -19,6 +19,7 @@ sudo apt autoremove
 PROJECT_DIR=$HOME/projects
 if [ ! -d $PROJECT_DIR ]; then
     mkdir -p $PROJECT_DIR
+    cd $PROJECT_DIR
     REPO_DIR=$PROJECT_DIR/gpu-burn
     if [ ! -d $REPO_DIR ]; then
         git clone https://github.com/thuvh/gpu-burn.git
