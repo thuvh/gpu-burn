@@ -16,3 +16,12 @@ sudo apt install -y vim git build-essential \
     libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 sudo apt autoremove
 
+PROJECT_DIR=$HOME/projects
+if [ ! -d $PROJECT_DIR ]; then
+    mkdir -p $PROJECT_DIR
+    REPO_DIR=$PROJECT_DIR/gpu-burn
+    if [ ! -d $REPO_DIR ]; then
+        git clone https://github.com/thuvh/gpu-burn.git
+    fi
+fi
+
