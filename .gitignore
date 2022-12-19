@@ -4,3 +4,6 @@ gpu_burn-drv\.o
 compare\.ptx
 
 gpu_burn
+3090-results
+4090-results
+*.tar.gz
