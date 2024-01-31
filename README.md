@@ -62,3 +62,4 @@ CCPATH can be specified to point to a specific gcc (default is
     
     Example:
     gpu_burn -d 3600
+1
